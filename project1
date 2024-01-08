@@ -1,0 +1,48 @@
+package project1;
+
+import java.util.Scanner;
+
+         class project1 {
+    String title;
+    project1(String tit){
+     title=tit;
+    
+    }
+         }
+class main {
+        public static void main(String[]args){
+            String author;
+            String title;
+            String publisher;
+            int price=850;
+            int r;
+            int copies;
+            Scanner sc=new Scanner(System.in);
+            System.out.println("enter the title name");
+            title=sc.next();
+            
+            project1 b=new project1 (title);
+            switch(title){
+                case"java":
+                    System.out.println("the author name:" +"mikel");
+                    System.out.println("the publisher name:" +"abcd");
+                    System.out.println("enter the required copies");
+                    int c=sc.nextInt();
+                    r=c*price;
+                    System.out.println("the total cost is"+r);
+        break;
+                    case"monkey":
+                    System.out.println("the author name:" +"lotus");
+                    System.out.println("the publisher name:" +"efgh");
+                    System.out.println("enter the required copies");
+                    int d=sc.nextInt();
+                    r=d*price;
+                    System.out.println("the total cost is"+r);
+        break;
+                    default:
+                        System.out.println("book is not available");
+                        break;
+            }
+        }
+}
+   
